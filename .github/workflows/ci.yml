@@ -6,13 +6,8 @@ jobs:
     name: Build & Test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2     # checkout the repo
-      - run: npm install                   # install packages
-      - run: npx mocha test                 # run tests (configured to use jest-junit reporter)
       - name: Test Report
-        uses: phoenix-actions/test-reporting@v10
-        id: test-report               # Set ID reference for step
-        if: success() || failure()    # run this step even if previous step failed
+        uses: dorny/test-reporter@v1
         with:
           name: JEST Tests            # Name of the check run which will be created
           path: test/junit.xml    # Path to test results
