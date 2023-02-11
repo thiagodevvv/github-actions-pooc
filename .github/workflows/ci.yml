@@ -7,8 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2     # checkout the repo
-      - run: npm ci                   # install packages
-      - run: npm test                 # run tests (configured to use jest-junit reporter)
+      - run: npm install                   # install packages
+      - run: npx mocha test                 # run tests (configured to use jest-junit reporter)
 
       - name: Test Report
         uses: phoenix-actions/test-reporting@v8
@@ -16,5 +16,5 @@ jobs:
         if: success() || failure()    # run this step even if previous step failed
         with:
           name: JEST Tests            # Name of the check run which will be created
-          path: results-*.xml    # Path to test results
-          reporter: mocha-juni
+          path: results-*.json    # Path to test results
+          reporter: mocha-json
