@@ -9,7 +9,6 @@ jobs:
       - uses: actions/checkout@v2     # checkout the repo
       - run: npm install                   # install packages
       - run: npx mocha test                 # run tests (configured to use jest-junit reporter)
-
       - name: Test Report
         uses: phoenix-actions/test-reporting@v8
         id: test-report               # Set ID reference for step
