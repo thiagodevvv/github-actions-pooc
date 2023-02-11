@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="4" failures="0" errors="0" time="55.313">
+  <testsuite name="#suite de testes" errors="0" failures="0" skipped="0" timestamp="2023-02-11T22:16:27" time="55.256" tests="4">
+    <testcase classname="#suite de testes #teste 1" name="#suite de testes #teste 1" time="10.003">
+    </testcase>
+    <testcase classname="#suite de testes #teste 2" name="#suite de testes #teste 2" time="15.002">
+    </testcase>
+    <testcase classname="#suite de testes #teste 3" name="#suite de testes #teste 3" time="20.002">
+    </testcase>
+    <testcase classname="#suite de testes #teste 4" name="#suite de testes #teste 4" time="10.015">
+    </testcase>
+  </testsuite>
+</testsuites>

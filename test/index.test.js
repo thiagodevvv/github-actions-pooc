@@ -4,7 +4,7 @@ const assert = require("assert")
 async function functionPromisy() {
 
 }
-
+jest.setTimeout(100000)
 describe("#suite de testes", () => {
     it("#teste 1", async () => {
 
