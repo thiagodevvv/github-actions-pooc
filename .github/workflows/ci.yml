@@ -16,5 +16,5 @@ jobs:
         if: success() || failure()    # run this step even if previous step failed
         with:
           name: JEST Tests            # Name of the check run which will be created
-          path: test/results.xml    # Path to test results
-          reporter: mocha-junit
+          path: test/junit.xml    # Path to test results
+          reporter: jest-junit
